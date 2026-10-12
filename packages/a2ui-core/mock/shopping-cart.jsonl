@@ -1,0 +1,30 @@
+{"version":"v0.9","createSurface":{"surfaceId":"cart-surface","catalogId":"https://a2ui.org/specification/v0_9/basic_catalog.json","sendDataModel":true}}
+{"version":"v0.9","updateDataModel":{"surfaceId":"cart-surface","value":{"title":"Shopping Cart","subtitle":"3 items — edit quantity below, data comes from DataModel","items":[{"name":"Wireless Headphones","priceLabel":"Price: ¥299","qty":1},{"name":"USB-C Cable","priceLabel":"Price: ¥39","qty":2},{"name":"Phone Case","priceLabel":"Price: ¥59","qty":1}],"coupon":"","giftWrap":false,"totalLabel":"Estimated total: ¥436"}}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"root","component":"Column","justify":"start","align":"stretch","children":["cart-title","cart-subtitle","main-divider","cart-list","summary-divider","summary-card","checkout-row"]}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"cart-title","component":"Text","text":{"path":"/title"},"variant":"h1"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"cart-subtitle","component":"Text","text":{"path":"/subtitle"},"variant":"body"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"main-divider","component":"Divider","axis":"horizontal"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"cart-list","component":"List","direction":"vertical","align":"stretch","children":["item-card-0","item-card-1","item-card-2"]}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-card-0","component":"Card","child":"item-col-0"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-col-0","component":"Column","justify":"start","align":"stretch","children":["item-name-0","item-price-0","item-qty-0"]}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-name-0","component":"Text","text":{"path":"/items/0/name"},"variant":"h4"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-price-0","component":"Text","text":{"path":"/items/0/priceLabel"},"variant":"caption"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-qty-0","component":"Slider","label":"Quantity","value":{"path":"/items/0/qty"},"min":1,"max":10}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-card-1","component":"Card","child":"item-col-1"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-col-1","component":"Column","justify":"start","align":"stretch","children":["item-name-1","item-price-1","item-qty-1"]}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-name-1","component":"Text","text":{"path":"/items/1/name"},"variant":"h4"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-price-1","component":"Text","text":{"path":"/items/1/priceLabel"},"variant":"caption"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-qty-1","component":"Slider","label":"Quantity","value":{"path":"/items/1/qty"},"min":1,"max":10}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-card-2","component":"Card","child":"item-col-2"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-col-2","component":"Column","justify":"start","align":"stretch","children":["item-name-2","item-price-2","item-qty-2"]}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-name-2","component":"Text","text":{"path":"/items/2/name"},"variant":"h4"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-price-2","component":"Text","text":{"path":"/items/2/priceLabel"},"variant":"caption"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"item-qty-2","component":"Slider","label":"Quantity","value":{"path":"/items/2/qty"},"min":1,"max":10}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"summary-divider","component":"Divider","axis":"horizontal"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"summary-card","component":"Card","child":"summary-col"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"summary-col","component":"Column","justify":"start","align":"stretch","children":["coupon-field","gift-wrap","total-text"]}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"coupon-field","component":"TextField","label":"Coupon code","value":{"path":"/coupon"},"type":"text","placeholder":"Enter coupon"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"gift-wrap","component":"CheckBox","label":"Gift wrap (+¥10)","value":{"path":"/giftWrap"}}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"total-text","component":"Text","text":{"path":"/totalLabel"},"variant":"h3"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"checkout-row","component":"Row","justify":"end","align":"center","children":["checkout-btn"]}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"cart-surface","components":[{"id":"checkout-btn","component":"Button","text":"Checkout","variant":"primary","size":"large"}]}}

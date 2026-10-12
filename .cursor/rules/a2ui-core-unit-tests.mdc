@@ -1,0 +1,30 @@
+---
+description: 修改 a2ui-core 后必须运行单元测试
+globs: packages/a2ui-core/**/*
+alwaysApply: false
+---
+
+# a2ui-core 单元测试要求
+
+凡改动 `packages/a2ui-core` 下源码、测试或相关配置后，在结束任务前**必须**运行单元测试，不得跳过。
+
+## 必跑命令
+
+在仓库根目录执行：
+
+```bash
+pnpm --filter @a2ui/core test
+```
+
+## 规则
+
+- 改完代码后先跑测试，再汇报完成
+- 测试失败必须修复，直到全部通过
+- 若只改了某一子系统，可先跑对应脚本，但最终仍需全量 `test` 通过：
+  - `pnpm --filter @a2ui/core test:parser`
+  - `pnpm --filter @a2ui/core test:store`
+- 新增/修改行为时，同步补充或更新 `packages/a2ui-core/test/` 下用例
+
+## 例外
+
+仅改动 `packages/a2ui-core/mock/` 下的 mock 数据、且不影响 parser/store/treebuilder 逻辑时，可不强制跑测试；若拿不准，仍然跑全量测试。

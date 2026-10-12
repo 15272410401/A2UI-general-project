@@ -1,0 +1,158 @@
+{
+  "messages": [
+    {
+      "version": "v0.9",
+      "createSurface": {
+        "surfaceId": "column-surface",
+        "catalogId": "https://a2ui.org/specification/v0_9/basic_catalog.json"
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "column-surface",
+        "components": [
+          {
+            "id": "root",
+            "component": "Column",
+            "justify": "start",
+            "align": "center",
+            "children": ["title-row", "content-row", "button-row"]
+          },
+          {
+            "id": "title-row",
+            "component": "Row",
+            "justify": "center",
+            "align": "center",
+            "children": ["main-title", "subtitle"]
+          },
+          {
+            "id": "main-title",
+            "component": "Text",
+            "text": "A2UI Column Layout",
+            "variant": "h1"
+          },
+          {
+            "id": "subtitle",
+            "component": "Text",
+            "text": "Multi-level layout demonstration",
+            "variant": "body"
+          },
+          {
+            "id": "content-row",
+            "component": "Row",
+            "justify": "spaceAround",
+            "align": "stretch",
+            "children": ["card1", "card2", "card3"]
+          },
+          {
+            "id": "card1",
+            "component": "Column",
+            "justify": "center",
+            "align": "center",
+            "children": ["card1-icon", "card1-title", "card1-desc"]
+          },
+          {
+            "id": "card1-icon",
+            "component": "Icon",
+            "icon": "🎨",
+            "size": "large",
+            "color": "#42b983"
+          },
+          {
+            "id": "card1-title",
+            "component": "Text",
+            "text": "Design",
+            "variant": "h4"
+          },
+          {
+            "id": "card1-desc",
+            "component": "Text",
+            "text": "Beautiful UI components",
+            "variant": "caption"
+          },
+          {
+            "id": "card2",
+            "component": "Column",
+            "justify": "center",
+            "align": "center",
+            "children": ["card2-icon", "card2-title", "card2-desc"]
+          },
+          {
+            "id": "card2-icon",
+            "component": "Icon",
+            "icon": "⚡",
+            "size": "large",
+            "color": "#f5a623"
+          },
+          {
+            "id": "card2-title",
+            "component": "Text",
+            "text": "Fast",
+            "variant": "h4"
+          },
+          {
+            "id": "card2-desc",
+            "component": "Text",
+            "text": "High performance",
+            "variant": "caption"
+          },
+          {
+            "id": "card3",
+            "component": "Column",
+            "justify": "center",
+            "align": "center",
+            "children": ["card3-icon", "card3-title", "card3-desc"]
+          },
+          {
+            "id": "card3-icon",
+            "component": "Icon",
+            "icon": "🔧",
+            "size": "large",
+            "color": "#3b82f6"
+          },
+          {
+            "id": "card3-title",
+            "component": "Text",
+            "text": "Flexible",
+            "variant": "h4"
+          },
+          {
+            "id": "card3-desc",
+            "component": "Text",
+            "text": "Highly customizable",
+            "variant": "caption"
+          },
+          {
+            "id": "button-row",
+            "component": "Row",
+            "justify": "center",
+            "align": "center",
+            "children": ["primary-btn", "secondary-btn", "danger-btn"]
+          },
+          {
+            "id": "primary-btn",
+            "component": "Button",
+            "text": "Get Started",
+            "variant": "primary",
+            "size": "medium"
+          },
+          {
+            "id": "secondary-btn",
+            "component": "Button",
+            "text": "Learn More",
+            "variant": "secondary",
+            "size": "medium"
+          },
+          {
+            "id": "danger-btn",
+            "component": "Button",
+            "text": "Delete",
+            "variant": "danger",
+            "size": "medium"
+          }
+        ]
+      }
+    }
+  ]
+}

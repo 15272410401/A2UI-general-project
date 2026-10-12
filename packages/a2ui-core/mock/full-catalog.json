@@ -1,0 +1,614 @@
+{
+  "messages": [
+    {
+      "version": "v0.9",
+      "createSurface": {
+        "surfaceId": "full-catalog-surface",
+        "catalogId": "https://a2ui.org/specification/v0_9/basic_catalog.json"
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "root",
+            "component": "Column",
+            "justify": "start",
+            "align": "stretch",
+            "children": [
+              "page-title",
+              "page-subtitle",
+              "main-divider",
+              "media-row",
+              "form-card",
+              "list-section",
+              "tabs-section",
+              "modal-section"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "page-title",
+            "component": "Text",
+            "text": "A2UI Full Catalog",
+            "variant": "h1"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "page-subtitle",
+            "component": "Text",
+            "text": "Demo covering all basic_catalog components",
+            "variant": "body"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "main-divider",
+            "component": "Divider",
+            "axis": "horizontal"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "media-row",
+            "component": "Row",
+            "justify": "spaceAround",
+            "align": "center",
+            "children": [
+              "demo-image",
+              "demo-icon",
+              "demo-video",
+              "demo-audio"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "demo-image",
+            "component": "Image",
+            "src": "https://picsum.photos/seed/a2ui/160/100",
+            "alt": "Demo image",
+            "width": 160,
+            "height": 100,
+            "borderRadius": "8px"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "demo-icon",
+            "component": "Icon",
+            "icon": "⭐",
+            "size": "large",
+            "color": "#42b983"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "demo-video",
+            "component": "Video",
+            "src": "https://www.w3schools.com/html/mov_bbb.mp4",
+            "width": 200,
+            "height": 120
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "demo-audio",
+            "component": "AudioPlayer",
+            "url": "https://www.w3schools.com/html/horse.mp3",
+            "description": "Sample audio"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "form-card",
+            "component": "Card",
+            "child": "form-column"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "form-column",
+            "component": "Column",
+            "justify": "start",
+            "align": "stretch",
+            "children": [
+              "form-title",
+              "form-button",
+              "form-textfield",
+              "form-checkbox",
+              "form-slider",
+              "form-choice",
+              "form-datetime"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "form-title",
+            "component": "Text",
+            "text": "Form Controls",
+            "variant": "h3"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "form-button",
+            "component": "Button",
+            "text": "Primary Action",
+            "variant": "primary",
+            "size": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "form-textfield",
+            "component": "TextField",
+            "label": "Name",
+            "value": "A2UI",
+            "placeholder": "Enter name",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "form-checkbox",
+            "component": "CheckBox",
+            "label": "Enable notifications",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "form-slider",
+            "component": "Slider",
+            "label": "Volume",
+            "value": 40,
+            "min": 0,
+            "max": 100
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "form-choice",
+            "component": "ChoicePicker",
+            "label": "Theme",
+            "variant": "mutuallyExclusive",
+            "displayStyle": "chips",
+            "value": [
+              "light"
+            ],
+            "options": [
+              {
+                "label": "Light",
+                "value": "light"
+              },
+              {
+                "label": "Dark",
+                "value": "dark"
+              },
+              {
+                "label": "System",
+                "value": "system"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "form-datetime",
+            "component": "DateTimeInput",
+            "label": "Schedule",
+            "value": "2026-08-03T16:00"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "list-section",
+            "component": "Column",
+            "justify": "start",
+            "align": "stretch",
+            "children": [
+              "list-title",
+              "demo-list"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "list-title",
+            "component": "Text",
+            "text": "List",
+            "variant": "h3"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "demo-list",
+            "component": "List",
+            "direction": "vertical",
+            "align": "stretch",
+            "children": [
+              "list-item-1",
+              "list-item-2",
+              "list-item-3"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "list-item-1",
+            "component": "Text",
+            "text": "• First list item",
+            "variant": "body"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "list-item-2",
+            "component": "Text",
+            "text": "• Second list item",
+            "variant": "body"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "list-item-3",
+            "component": "Text",
+            "text": "• Third list item",
+            "variant": "body"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "tabs-section",
+            "component": "Column",
+            "justify": "start",
+            "align": "stretch",
+            "children": [
+              "tabs-title",
+              "demo-tabs"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "tabs-title",
+            "component": "Text",
+            "text": "Tabs",
+            "variant": "h3"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "demo-tabs",
+            "component": "Tabs",
+            "tabs": [
+              {
+                "title": "Overview",
+                "child": "tab-panel-1"
+              },
+              {
+                "title": "Details",
+                "child": "tab-panel-2"
+              },
+              {
+                "title": "Settings",
+                "child": "tab-panel-3"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "tab-panel-1",
+            "component": "Text",
+            "text": "Overview panel content",
+            "variant": "body"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "tab-panel-2",
+            "component": "Text",
+            "text": "Details panel content",
+            "variant": "body"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "tab-panel-3",
+            "component": "Text",
+            "text": "Settings panel content",
+            "variant": "body"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "modal-section",
+            "component": "Column",
+            "justify": "start",
+            "align": "start",
+            "children": [
+              "modal-title",
+              "demo-modal"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "modal-title",
+            "component": "Text",
+            "text": "Modal",
+            "variant": "h3"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "demo-modal",
+            "component": "Modal",
+            "trigger": "modal-trigger",
+            "content": "modal-content"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "modal-trigger",
+            "component": "Button",
+            "text": "Open Modal",
+            "variant": "secondary",
+            "size": "medium"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "modal-content",
+            "component": "Column",
+            "justify": "start",
+            "align": "stretch",
+            "children": [
+              "modal-content-title",
+              "modal-content-body"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "modal-content-title",
+            "component": "Text",
+            "text": "Modal Title",
+            "variant": "h4"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "full-catalog-surface",
+        "components": [
+          {
+            "id": "modal-content-body",
+            "component": "Text",
+            "text": "This modal content is referenced by ID via the protocol.",
+            "variant": "body"
+          }
+        ]
+      }
+    }
+  ]
+}

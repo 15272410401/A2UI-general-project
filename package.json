@@ -1,0 +1,18 @@
+{
+  "name": "a2ui-full",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A2UI-playground monorepo project",
+  "scripts": {
+    "init": "pnpm install",
+    "dev:web": "pnpm --filter a2ui-playground dev",
+    "build:web": "pnpm --filter a2ui-playground build",
+    "dev:server": "pnpm --filter a2ui-playground-server dev",
+    "build:server": "pnpm --filter a2ui-playground-server build",
+    "clear:mac": "find . -type d -name 'node_modules' -exec rm -rf {} + && rm -f pnpm-lock.yaml",
+    "clear:win": "powershell.exe -Command \"Get-ChildItem -Path . -Recurse -Directory -Filter 'node_modules' | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue; Remove-Item -Path pnpm-lock.yaml -Force -ErrorAction SilentlyContinue\""
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

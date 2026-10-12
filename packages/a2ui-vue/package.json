@@ -1,0 +1,23 @@
+{
+  "name": "@a2ui/vue",
+  "version": "1.0.0",
+  "description": "A2UI Vue rendering engine",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {},
+  "dependencies": {
+    "@a2ui/core": "workspace:*",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "messages": [
+    {
+      "version": "v0.9",
+      "createSurface": {
+        "surfaceId": "local-action-surface",
+        "catalogId": "https://a2ui.org/specification/v0_9/basic_catalog.json",
+        "sendDataModel": true
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateDataModel": {
+        "surfaceId": "local-action-surface",
+        "value": {
+          "message": "Hello"
+        }
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "local-action-surface",
+        "components": [
+          {
+            "id": "root",
+            "component": "Column",
+            "justify": "start",
+            "align": "stretch",
+            "children": [
+              "message-text",
+              "update-btn",
+              "open-link-btn"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "local-action-surface",
+        "components": [
+          {
+            "id": "message-text",
+            "component": "Text",
+            "text": {
+              "path": "/message"
+            },
+            "variant": "h2"
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "local-action-surface",
+        "components": [
+          {
+            "id": "update-btn",
+            "component": "Button",
+            "text": "Update text",
+            "variant": "primary",
+            "action": {
+              "functionCall": {
+                "call": "updateDataModel",
+                "args": {
+                  "path": "/message",
+                  "value": "Updated locally!"
+                },
+                "returnType": "void"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "local-action-surface",
+        "components": [
+          {
+            "id": "open-link-btn",
+            "component": "Button",
+            "text": "Open A2UI docs",
+            "variant": "secondary",
+            "action": {
+              "functionCall": {
+                "call": "openUrl",
+                "args": {
+                  "url": "https://a2ui.org"
+                },
+                "returnType": "void"
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

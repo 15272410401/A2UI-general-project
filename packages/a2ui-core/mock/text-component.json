@@ -1,0 +1,101 @@
+{
+  "messages": [
+    {
+      "version": "v0.9",
+      "createSurface": {
+        "surfaceId": "test-surface",
+        "catalogId": "https://a2ui.org/specification/v0_9/basic_catalog.json"
+      }
+    },
+    {
+      "version": "v0.9",
+      "updateComponents": {
+        "surfaceId": "test-surface",
+        "components": [
+          {
+            "id": "root",
+            "component": "Text",
+            "text": "A2UI Component Preview",
+            "variant": "h2"
+          },
+          {
+            "id": "subtitle",
+            "component": "Text",
+            "text": "以下是各种组件的展示示例",
+            "variant": "body"
+          },
+          {
+            "id": "image1",
+            "component": "Image",
+            "src": "https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=beautiful%20nature%20landscape%20with%20mountains%20and%20lake&image_size=landscape_16_9",
+            "alt": "Nature Landscape",
+            "width": 400,
+            "borderRadius": "8px"
+          },
+          {
+            "id": "icon1",
+            "component": "Icon",
+            "icon": "🌟",
+            "size": "large",
+            "color": "#42b983"
+          },
+          {
+            "id": "button1",
+            "component": "Button",
+            "text": "Primary Button",
+            "variant": "primary",
+            "size": "medium"
+          },
+          {
+            "id": "button2",
+            "component": "Button",
+            "text": "Secondary Button",
+            "variant": "secondary",
+            "size": "medium"
+          },
+          {
+            "id": "button3",
+            "component": "Button",
+            "text": "Danger Button",
+            "variant": "danger",
+            "size": "medium"
+          },
+          {
+            "id": "textfield1",
+            "component": "TextField",
+            "value": "",
+            "label": "用户名",
+            "placeholder": "请输入用户名",
+            "type": "text"
+          },
+          {
+            "id": "textfield2",
+            "component": "TextField",
+            "value": "",
+            "label": "密码",
+            "placeholder": "请输入密码",
+            "type": "password"
+          },
+          {
+            "id": "checkbox1",
+            "component": "CheckBox",
+            "value": true,
+            "label": "已阅读并同意条款"
+          },
+          {
+            "id": "checkbox2",
+            "component": "CheckBox",
+            "value": false,
+            "label": "接收邮件通知"
+          },
+          {
+            "id": "datetime1",
+            "component": "DateTimeInput",
+            "value": "2026-07-28T10:30",
+            "label": "选择日期时间"
+          }
+        ]
+      }
+    }
+  ]
+}

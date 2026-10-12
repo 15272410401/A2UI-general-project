@@ -1,0 +1,7 @@
+{"version":"v0.9","createSurface":{"surfaceId":"login-surface","catalogId":"https://a2ui.org/specification/v0_9/basic_catalog.json","sendDataModel":true}}
+{"version":"v0.9","updateComponents":{"surfaceId":"login-surface","components":[{"id":"root","component":"Column","justify":"start","align":"stretch","children":["form_title","username_field","password_field","submit_button"]}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"login-surface","components":[{"id":"form_title","component":"Text","text":"Login","variant":"h2"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"login-surface","components":[{"id":"username_field","component":"TextField","label":"Username","value":{"path":"/username"},"type":"text","placeholder":"Enter username"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"login-surface","components":[{"id":"password_field","component":"TextField","label":"Password","value":{"path":"/password"},"type":"password","placeholder":"Enter password"}]}}
+{"version":"v0.9","updateComponents":{"surfaceId":"login-surface","components":[{"id":"submit_button","component":"Button","text":"Sign In","variant":"primary","size":"medium"}]}}
+{"version":"v0.9","updateDataModel":{"surfaceId":"login-surface","value":{"username":"demo","password":""}}}

@@ -1,0 +1,23 @@
+{
+  "name": "a2ui-playground",
+  "version": "1.0.0",
+  "description": "A2UI-playground web application",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@a2ui/core": "workspace:*",
+    "@a2ui/vue": "workspace:*",
+    "element-plus": "^2.14.3",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.8",
+    "vue-tsc": "^2.0.11"
+  }
+}
